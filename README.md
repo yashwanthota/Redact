@@ -1,8 +1,4 @@
 # PDF Redactor
-
-[![Python Version](https://img.shields.io/badge/python-3.9%2B-blue)](https://www.python.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green)](LICENSE)
-
 PDF Redactor is a utility for automatically detecting and redacting Personally Identifiable Information (PII) from PDF documents. It uses `spaCy` for Named Entity Recognition and `pytesseract` to OCR embedded images, ensuring that sensitive data isn't missed even if it's trapped in a scan.
 
 It supports both a CLI for batch operations and a Flask-based web interface.
@@ -22,11 +18,11 @@ It supports both a CLI for batch operations and a Flask-based web interface.
 1. Install Tesseract on your system:
    - **Ubuntu/Debian:** `sudo apt-get install tesseract-ocr libtesseract-dev`
    - **macOS:** `brew install tesseract`
-   - **Windows:** Download the binary from [UB-Mannheim](https://github.com/UB-Mannheim/tesseract/wiki)
+   - **Windows:** Download the binary from 
 
 2. Clone and install python dependencies:
 ```bash
-git clone https://github.com/moduluz/pdf-redactor-main.git 
+git clone https://github.com/yashwanthota/Redact
 cd pdf-redactor-main
 pip install -r requirements.txt
 ```
@@ -62,5 +58,4 @@ To deploy on Render:
 2. Select **Docker** as the Runtime environment.
 3. Deploy. Waitress will automatically bind to the `$PORT` environment variable.
 
-## License
-MIT
+
